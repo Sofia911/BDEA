@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  python_jupyter:
+    build: ./python/
+    container_name: python_jupyter
+    ports:
+      - 8888:8888
+    volumes:
+      - ./notebooks:/var/lib/jupyter
+    user: root
+    entrypoint: jupyter lab --ip='0.0.0.0' --port=8888 --allow-root --no-browser --NotebookApp.token='' --NotebookApp.password=''
+    depends_on:
+      - mariadb
+  mariadb:
+    build: ./mariadb/
+    container_name: mariadb
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mariadb/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./data:/var/lib/mydb_bdea
+    user: root
+    environment:
+      MARIADB_USER: user_bdea
+      MARIADB_DATABASE: mydb_bdea
+      MARIADB_PASSWORD: secret
+      MARIADB_ROOT_PASSWORD: secret
+volumes: 
+  notebooks:
+  data:
