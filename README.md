@@ -1,5 +1,9 @@
-# BDEA
-* Folgende Images wurdes verwendet:     
+# BDEA Projekt Nr.1
+## Inhalt
+
+
+## Quellen
+* Folgende Images wurden verwendet:     
   * [Python3.8-slim](https://hub.docker.com/_/python) 
   * [Mariadb:lastest](https://hub.docker.com/_/mariadb)
 
@@ -11,3 +15,10 @@
    * [MariaDB Documentation](https://hub.docker.com/_/mariadb)
    * [MariaDB Connector/Python](https://mariadb-corporation.github.io/mariadb-connector-python/)
    * [Connect Python to MariaDB/MySQL Database](https://www.youtube.com/watch?v=oDR7k66x-AU)
+   
+   
+## Installation
+1. Docker installieren (Download für [mac](https://docs.docker.com/desktop/install/mac-install/), für [windows](https://docs.docker.com/desktop/install/windows-install/))
+2. Dieses [Repository](https://github.com/Sofia911/BDEA) clonen
+3. In den Ordner [docker_setup](https://github.com/Sofia911/BDEA/tree/main/docker_setup) navigieren und den Befehl ```docker-compose up``` ausführen
+4. Im Browser [localhost:8888](http://localhost:8888) aufrufen, um zum Jupyter Notebook zu gelangen
