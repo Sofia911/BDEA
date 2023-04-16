@@ -1,6 +1,6 @@
 # BDEA Projekt Nr.1
 ## Inhalt des Projekts
-In diesem Notebook-basierten Tutorial wird eine beispielhafte Datenanalyse von Schlafdaten in einem Jupyter Notebook ausgeführt. Dafür wird eine MariaDB Datenbank zur Verwaltung der Daten und die Python Programmbibliothek pandas zur weiteren Verarbeitung, Analyse und Darstellung der Daten verwendet. Das ganze Projekt läuft in einem Docker-Container.
+In diesem Notebook-basierten Tutorial wird eine beispielhafte Datenanalyse von Schlafdaten in einem Jupyter Notebook ausgeführt. Dafür wird eine MariaDB Datenbank zur Verwaltung der Daten und die Python Programmbibliothek pandas zur weiteren Verarbeitung, Analyse und Darstellung verwendet. Das ganze Projekt läuft in einem Docker-Container.
 
 ## Übersicht Repository
 Pfad | Dateiname | Sprache / Dateiformat| Beschreibung | 
