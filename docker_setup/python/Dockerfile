@@ -2,7 +2,6 @@ FROM python:3.8-slim
 
 RUN pip install --upgrade pip
 RUN pip install jupyterlab
-# RUN pip3 install mariadb
 RUN pip install mysql-connector-python
 RUN python3 -m pip install mariadb_kernel
 RUN python3 -m mariadb_kernel.install
