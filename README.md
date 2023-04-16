@@ -20,5 +20,5 @@
 ## Installation
 1. Docker installieren (Download für [mac](https://docs.docker.com/desktop/install/mac-install/), für [windows](https://docs.docker.com/desktop/install/windows-install/))
 2. Dieses [Repository](https://github.com/Sofia911/BDEA) clonen
-3. In den Ordner [docker_setup](https://github.com/Sofia911/BDEA/tree/main/docker_setup) navigieren und den Befehl ```docker-compose up``` ausführen
+3. In den Ordner [docker_setup](https://github.com/Sofia911/BDEA/tree/main/docker_setup) navigieren und den Befehl ```docker-compose up``` in der Konsole ausführen
 4. Im Browser [localhost:8888](http://localhost:8888) aufrufen, um zum Jupyter Notebook zu gelangen
