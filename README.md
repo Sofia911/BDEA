@@ -1,8 +1,19 @@
 # BDEA Projekt Nr.1
-# Inhalt
+## Inhalt des Projekts
+In diesem Notebook-basierten Tutorial wird eine beispielhafte Datenanalyse von Schlafdaten in einem Jupyter Notebook ausgeführt. Dafür wird eine MariaDB Datenbank zur Verwaltung der Daten und die Python Programmbibliothek pandas zur weiteren Verarbeitung, Analyse und Darstellung der Daten verwendet. Das ganze Projekt läuft in einem Docker-Container.
 
+## Übersicht Repository
+Pfad | Dateiname | Sprache / Dateiformat| Beschreibung | 
+-- | -- | -- | -- | 
+`/docker_setup/data/` | [`sleep_data.csv`](https://github.com/Sofia911/BDEA/tree/main/docker_setup/data) | ._csv_-Datei | Quelldatei Schlafdaten|
+`/docker_setup/mariadb/` | [`Dockerfile`](https://github.com/Sofia911/BDEA/blob/main/docker_setup/mariadb/Dockerfile) | Dockerfile | Dockerfile für das mariadb Dockerimage |
+`/docker_setup/mariadb/` | [`init.sql`](https://github.com/Sofia911/BDEA/blob/main/docker_setup/mariadb/init.sql) |._sql_-Datei | Datei zum Aufsetzen der Datenbank der Tabelle _sleep_data_ |
+`/docker_setup/notebooks/`| [`SleepAnalysis.ipynb`](https://github.com/Sofia911/BDEA/blob/main/docker_setup/notebooks/SleepAnalysis.ipynb) |._ipynb_-Datei | Jupyter Notebook mit den Analysen|
+`/docker_setup/notebooks/.ipynb_checkpoints/`| [`SleepAnalysis-checkpoint.ipynb`](https://github.com/Sofia911/BDEA/blob/main/docker_setup/notebooks/.ipynb_checkpoints/SleepAnalysis-checkpoint.ipynb) |._ipynb_-Datei | Jupyter checkpoint Datei|
+`/docker_setup/notebooks/python/`| [`Dockerfile`](https://github.com/Sofia911/BDEA/blob/main/docker_setup/python/Dockerfile) | Dockerfile | Dockerfile für das python Dockerimage |
+`/docker_setup/`| [`docker-compose.yaml`](https://github.com/Sofia911/BDEA/blob/main/docker_setup/docker-compose.yaml) | ._yaml_-Datei | Datei definiert Dienste, Netzwerke und Volumes für die Docker-Anwendung |
 
-# Quellen
+## Quellen
 * Folgende Images wurden verwendet:     
   * [Python3.8-slim](https://hub.docker.com/_/python) 
   * [Mariadb:lastest](https://hub.docker.com/_/mariadb)
@@ -16,14 +27,19 @@
    * [MariaDB Connector/Python](https://mariadb-corporation.github.io/mariadb-connector-python/)
    * [Connect Python to MariaDB/MySQL Database](https://www.youtube.com/watch?v=oDR7k66x-AU)
    
+* Datenquellen:
+   * eigene Daten aufgezeichnet mit Garmin Forerunner 945 angefordert über das Account Managment Center von Garmin
    
-# Installation
+## Installation
 1. Docker installieren (Download für [mac](https://docs.docker.com/desktop/install/mac-install/), für [windows](https://docs.docker.com/desktop/install/windows-install/))
 2. Dieses [Repository](https://github.com/Sofia911/BDEA) clonen
 3. In den Ordner [docker_setup](https://github.com/Sofia911/BDEA/tree/main/docker_setup) navigieren und den Befehl ```docker-compose up``` in der Konsole ausführen
 4. Im Browser [localhost:8888](http://localhost:8888) aufrufen, um zum Jupyter Notebook zu gelangen
 
-# Beschreibung der Daten
+## Beschreibung der Daten
+
+Zeitraum: 03.09.2022 - 10.04.2023<br>
+Anzahl Datensätze: 220
 
 | Spaltenname | Beschreibung
 | :-- | :-- 
