@@ -10,4 +10,4 @@ RUN pip install pandasql
 RUN pip install pandas
 RUN pip install matplotlib
 
-WORKDIR /project
+WORKDIR /var/lib/jupyter

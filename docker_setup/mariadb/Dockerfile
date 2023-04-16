@@ -1,3 +1,3 @@
 FROM mariadb:latest
 
-WORKDIR /project
+WORKDIR /var/lib/jupyter

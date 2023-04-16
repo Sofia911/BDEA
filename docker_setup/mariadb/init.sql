@@ -29,7 +29,11 @@ CREATE TABLE mydb_bdea.sleep_data(
   restfulnessScore VARCHAR(10) DEFAULT NULL, 
   interruptionsScore VARCHAR(10) DEFAULT NULL,
   sleepFeedback VARCHAR(100) DEFAULT 'No feedback',
-  insight VARCHAR(100) DEFAULT 'No insight', 
+  insight VARCHAR(100) DEFAULT 'No insight',
+  RestingHeartRate VARCHAR(10) DEFAULT NULL,
+  minAvgHeartRate VARCHAR(10) DEFAULT NULL,
+  maxAvgHeartRate VARCHAR(10) DEFAULT NULL,
+  AsleepAverageStressLevel VARCHAR(10) DEFAULT NULL,
   PRIMARY KEY (startDay, startTime))
 
 -- Path: mariadb\init.sql
