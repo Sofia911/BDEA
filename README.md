@@ -28,7 +28,7 @@ Pfad | Dateiname | Sprache / Dateiformat| Beschreibung |
    * [Connect Python to MariaDB/MySQL Database](https://www.youtube.com/watch?v=oDR7k66x-AU)
    
 * Datenquellen:
-   * eigene Daten aufgezeichnet mit Garmin Forerunner 945 angefordert über das Account Managment Center von Garmin
+   * eigene Daten aufgezeichnet mit Garmin Forerunner 945, angefordert über das Account Managment Center von Garmin
    
 ## Installation
 1. Docker installieren (Download für [mac](https://docs.docker.com/desktop/install/mac-install/), für [windows](https://docs.docker.com/desktop/install/windows-install/))
